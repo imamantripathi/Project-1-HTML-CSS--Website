@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Merriweather:wght@300&family=Mochiy+Pop+P+One&family=Playfair+Display:ital@1&display=swap");
+.header {
+  width: 100%;
+  height: 40%;
+  position: relative;
+}
+h2 {
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+h2:hover,
+h2:focus {
+  transition: all 0.5ms ease-in;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(233, 148, 148, 1) 100%
+  );
+}
+nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: rgb(240, 6, 6);
+  background: linear-gradient(
+    90deg,
+    rgba(240, 6, 6, 1) 6%,
+    rgba(211, 5, 5, 1) 14%,
+    rgba(140, 3, 3, 1) 64%,
+    rgba(18, 0, 0, 1) 82%,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(233, 35, 9, 1) 100%
+  );
+  border: 0px red solid;
+  transition: all 0.5s ease-out;
+}
+a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: x-large;
+  font-style: oblique;
+  text-decoration: none;
+  color: black;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+a:hover,
+a:focus {
+  color: black;
+  background-color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px black solid;
+}
+.toppost {
+  padding: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+.carousel {
+  background: #eee;
+}
+img {
+  height: 400px;
+}
+.carousel-cell {
+  height: 400px;
+  /* width: auto; */
+  /* height:100%;  */
+  margin-right: 10px;
+  /* background: #8C8; */
+  border-radius: 5px;
+  counter-increment: none;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /* content: counter(gallery-cell); */
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+.topquotes {
+  padding: 10px;
+}
+.quotes {
+  text-align: center;
+  padding: 5px 100px 5px 100px;
+  margin: 10px;
+  font-family: "PT Serif", serif;
+  font-weight: bolder;
+  /* box-sizing: border-box; */
+  background-origin: padding-box;
+  /* border: 1px red solid; */
+}
+.quotes:hover {
+  font-size: 30px;
+}
+.readmore {
+  font-family: "PT Serif", serif;
+  text-align: center;
+  font-weight: bolder;
+}
+.a {
+  flex: 1;
+  background: white;
+  color: black;
+  border: px solid;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.1ms ease-out;
+}
+.a:hover {
+  background-color: black;
+  color: wheat;
+  border: 0px;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 20px;
+}
+.book-blog {
+  padding: 10px;
+}
+.book-blog-h1 {
+  font-family: "Arvo", serif;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+.book-blog-introduction {
+  font-size: 20px;
+  font-family: "Merriweather", serif;
+}
+.book-blog-book-heading {
+  font-size: 25px;
+  font-family: "Merriweather", serif;
+}
+.book-blog-book-writer {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.book-blog-book-content {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+footer {
+  display: flex;
+  overflow: hidden;
+  /* Hide overflow */
+  background-color: black;
+  /* Dark background color */
+}
+
+footer a {
+  float: left;
+  /* Make sure that the links stay side-by-side */
+  display: block;
+  /* Change the display to block, for responsive reasons (see below) */
+  color: white;
+  /* White text color */
+  text-align: center;
+  /* Center the text */
+  padding: 14px 20px;
+  /* Add some padding */
+  text-decoration: none;
+  /* Remove underline */
+}
+
+.copyright {
+  color: #fff;
+  /* to align item to left */
+  margin-left: auto;
+  padding-right: 15px;
+}
+
+/* nav {
+  display: flex;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+a {
+  flex: 1;
+  background: rgb(240, 6, 6);
+  background: linear-gradient(
+    90deg,
+    rgba(240, 6, 6, 1) 6%,
+    rgba(211, 5, 5, 1) 14%,
+    rgba(140, 3, 3, 1) 64%,
+    rgba(18, 0, 0, 1) 82%,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(233, 35, 9, 1) 100%
+  );
+  color: #fff;
+  border: 1px solid;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+a:hover,
+a:focus {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 9%,
+    rgba(36, 1, 1, 1) 13%,
+    rgba(72, 2, 2, 1) 19%,
+    rgba(126, 4, 4, 1) 23%,
+    rgba(199, 6, 6, 1) 42%,
+    rgba(238, 7, 7, 1) 61%,
+    rgba(255, 7, 7, 1) 100%
+  );
+  color: ;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+} */
