@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mymessagez</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-<link rel="manifest" href="favicon_io/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
@@ -31,6 +45,9 @@
       <a href="contact.html" target="" rel="noopener noreferrer"> Contact</a>
       <a href="login.html" target="" rel="noopener noreferrer"> Login</a>
     </nav>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img style="height: 10%; width: 50px;" src="Media/back-to-top.png" alt="">
+    </button>
+
     <section class="toppost">
       <h2><a href="posts.html"> Top Posts</a></h2>
       <div class="carousel" data-flickity>
@@ -366,6 +383,32 @@
         >&copy; 2022 | Mymessagez</a
       >
     </footer>
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </body>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </html>
