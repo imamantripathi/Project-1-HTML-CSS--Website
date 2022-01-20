@@ -1,0 +1,84 @@
+body {
+    background: url(Media/blog_bg.png) no-repeat center fixed;
+    background-size: cover;
+  }
+  h1 {
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 1px 1px 10px white;
+  }
+  .banner {
+    text-align: center;
+  }
+  .banner img {
+    box-shadow: 5px 5px 15px white;
+  }
+  @media only screen and (max-width: 480px) {
+    .banner img {
+      width: 100%;
+    }
+  }
+  .sub-heading {
+    font-size: 50px;
+    text-align: center;
+    color: blanchedalmond;
+    text-shadow: 10px 10px 10px black;
+  }
+  .text-main {
+      text-align: center;
+      font-family:'Luxurious Roman', cursive;
+      padding: 5px 100px;
+      font-size: large;
+      text-shadow: 1px 1px 5px black;
+      color: white;
+  }
+
+  .main-blog-section {
+    padding-left: 50px;
+    padding-right: 50px;
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .blog-section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .blog-section {
+    flex: 1 0 25%;
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+    background: white;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(255, 252, 252, 0.534) 0px -12px 30px, rgba(255, 249, 250, 0.12) 0px 4px 6px,
+      rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 241, 241, 0.65) 0px -3px 5px;
+  }
+  .blog-section:hover{
+      transform: scale(1.2);
+      transition: all 0.5s ease-in-out;
+  }
+  @media (max-width: 800px) {
+    .main-must-visit {
+      flex-direction: column;
+      background: white;
+    }
+  }
+  .blog-section .text {
+    font-family:'Luxurious Roman', cursive;
+    border: 0px solid;
+    padding:10px 10px;
+  }
+  .main-blog-section .blog-section .text a{
+color: coral;
+text-decoration: none;
+text-shadow: 1px 1px 1px black;
+  }
+  .main-blog-section .blog-section .text a:hover{
+    color: black;
+    text-shadow:1px 1px 1px coral;
+  }
