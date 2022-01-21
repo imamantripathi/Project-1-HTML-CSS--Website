@@ -1,0 +1,75 @@
+body {
+  background: url(Media/posts_bg.png) no-repeat center fixed;
+  background-size: cover;
+}
+@media only screen and (max-width: 480px) {
+  .banner img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .banner img {
+    width: 100%;
+  }
+}
+.banner {
+  text-align: center;
+  width: 74%;
+  margin: auto;
+  box-shadow: 10px 10px 20px pink;
+}
+h1 {
+  text-align: center;
+  font-size: 300%;
+  padding-top: 20px;
+  font-family: "Playfair Display", serif;
+  /* font-family: "Arvo", serif;
+    font-family: "Open Sans", sans-serif; */
+  padding-bottom: 20px;
+  text-shadow: 1px 1px 5px pink;
+}
+.flex-container {
+  padding-left: 50px;
+  padding-right: 50px;
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  flex-direction: row;
+}
+.flex img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+}
+.flex {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  max-width: 350px;
+  height: auto;
+  text-align: center;
+  flex: 1 0 30%;
+  /* text-align: center; */
+  margin: 20px;
+  justify-content: center;
+  background: transparent;
+  color: white;
+  text-shadow: 1px 1px 1px pink;
+  display: inline-block;
+}
+@media only screen and (max-width: 480px) {
+  .flex {
+    max-width: 2187.5%;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
+}
+.flex:hover,
+.flex:focus {
+  box-shadow: 5px 5px 40px white;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  transform: scale(1.1);
+}
