@@ -14,8 +14,11 @@ body {
 }
 .banner {
   text-align: center;
-  width: 74%;
+  width: 100%;
   margin: auto;
+ 
+}
+.banner img{
   box-shadow: 10px 10px 20px pink;
 }
 h1 {
@@ -41,12 +44,12 @@ h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 350px;
+  width: 100%;
 }
 .flex {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
-  max-width: 350px;
+  width: 35%;
   height: auto;
   text-align: center;
   flex: 1 0 30%;
@@ -58,12 +61,12 @@ h1 {
   text-shadow: 1px 1px 1px pink;
   display: inline-block;
 }
-@media only screen and (max-width: 480px) {
-  .flex {
-    max-width: 2187.5%;
-    justify-content: center;
-    text-align: center;
-    padding: 0;
+
+@media only screen and (max-width:480px){
+  .flex{
+    flex: 1 0 40%;
+    flex-direction: column;
+    font-size: 10px;
   }
 }
 .flex:hover,
